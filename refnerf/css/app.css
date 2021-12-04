@@ -159,7 +159,7 @@ span.highlight {
 }
 
 .author-table, th, td {
-    table-layout:fixed;
+    table-layout: fixed;
     vertical-align: top;
     margin-left: auto;
     margin-right: auto;
@@ -167,8 +167,7 @@ span.highlight {
 }
 
 .video-compare-container {
-     width: 63%;
-    
+  width: 63%;
   margin: 0 auto;
   position: relative;
   display: block;
