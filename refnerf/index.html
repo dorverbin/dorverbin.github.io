@@ -124,13 +124,14 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="video-compare-container">
-                    <video class="video" id="materials" loop autoPlay muted src="video/materials_circle_mipnerf_ours.mp4" onplay="resizeAndPlay(this)"></video>
+                <div class="video-compare-container" id="materialsDiv">
+                    <video class="video" id="materials" loop playsinline autoPlay muted src="video/materials_circle_mipnerf_ours.mp4" onplay="resizeAndPlay(this)"></video>
+                    
                     <canvas height=0 class="videoMerge" id="materialsMerge"></canvas>
                 </div>
 			</div>
         </div>
-            
+
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -170,7 +171,7 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
                     
                 </div>
                 <div class="text-center">
-                    <video id="refdir" width="40%" autoplay loop muted>
+                    <video id="refdir" width="40%" playsinline autoplay loop muted>
                         <source src="video/reflection_animation.mp4" type="video/mp4" />
                     </video>
                 </div>
@@ -194,7 +195,7 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
                     We call this <i>Integrated Directional Encoding</i>, and we show experimentally that it allows sharing the emittance functions between points with different roughnesses. It also enables scene editing after training. Theoretically, our encoding is stationary on the sphere, similar to the Euclidean stationarity of NeRF's positional encoding. <br><br>
                 </div>
                 <div class="text-center">
-                    <video id="ide" width="100%" autoplay controls loop muted>
+                    <video id="ide" width="100%" playsinline autoplay controls loop muted>
                         <source src="video/ide_animation.mp4" type="video/mp4" />
                     </video>
                 </div>
@@ -207,7 +208,7 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
                     Additional Synthetic Results
                 </h3>
                 <div class="video-compare-container">
-                    <video class="video" id="teapot" loop autoPlay muted src="video/teapot_mipnerf_ours.mp4" onplay="resizeAndPlay(this)"></video>
+                    <video class="video" id="teapot" loop playsinline autoPlay muted src="video/teapot_mipnerf_ours.mp4" onplay="resizeAndPlay(this)"></video>
                     <canvas height=0 class="videoMerge" id="teapotMerge"></canvas>
                 </div>
 			</div>
@@ -220,7 +221,7 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
                 </h3>
                 Our method also produces accurate renderings and surface normals on captured photographs:
                 <div class="video-compare-container" style="width: 100%">
-                    <video class="video" id="toycar" loop autoPlay muted src="video/toycar.mp4" onplay="resizeAndPlay(this)"></video>
+                    <video class="video" id="toycar" loop playsinline autoPlay muted src="video/toycar.mp4" onplay="resizeAndPlay(this)"></video>
                     <canvas height=0 class="videoMerge" id="toycarMerge"></canvas>
                 </div>
 			</div>
@@ -238,7 +239,7 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
                 </div>
 
                 <div style="overflow: hidden;">
-                    <video id="materials" width="100%" autoplay loop muted style="margin-top: -5%;">
+                    <video id="editing-materials" width="100%" playsinline autoplay loop muted style="margin-top: -5%;">
                         <source src="video/materials_rougher_smoother.mp4" type="video/mp4" />
                     </video>
                 </div>
@@ -250,12 +251,12 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
                 <table width="100%">
                     <tr>
                         <td align="left" valign="top" width="50%">
-                            <video id="v2" width="100%" autoplay loop muted>
+                            <video id="v2" width="100%" playsinline autoplay loop muted>
                                 <source src="video/car_color2.mp4" type="video/mp4" />
                             </video>
                         </td>
                         <td align="left" valign="top" width="50%">
-                            <video id="v3" width="100%" autoplay loop muted>
+                            <video id="v3" width="100%" playsinline autoplay loop muted>
                                 <source src="video/car_color3.mp4" type="video/mp4" />
                             </video>
                         </td>

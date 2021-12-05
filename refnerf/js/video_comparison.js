@@ -104,7 +104,10 @@ function resizeAndPlay(element)
   var cv = document.getElementById(element.id + "Merge");
   cv.width = element.videoWidth/2;
   cv.height = element.videoHeight;
-  element.hidden = true
   element.play();
+  element.style.height = "0px";
+  //element.hidden = true;
+  //document.getElementById(element.id + "Div").hidden = true;
+    
   playVids(element.id);
 }
