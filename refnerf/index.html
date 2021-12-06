@@ -10,8 +10,8 @@
 
     <meta property="og:image" content="https://dorverbin.github.io/refnerf/img/refnerf_titlecard.jpg">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1296">
-    <meta property="og:image:height" content="840">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dorverbin.github.io/refnerf">
     <meta property="og:title" content="Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields">
@@ -39,17 +39,17 @@
 </head>
 
 <body>
-    <div class="container" id="main">
-        <div class="row">
-            <h2 class="col-md-12 text-center">
+    <div class="container" id="header" style="text-align: center; margin: auto;">
+        <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
+            <h2 class="col-md-12 text-center" id="title">
                 <b>Ref-NeRF</b>: Structured View-Dependent <br> Appearance for Neural Radiance Fields<br>
                 <small>
                 </small>
             </h2>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center" style="display: table;">
-                <table class="author-table">
+        <div class="row" id="author-row" style="margin:0 auto;">
+            <div class="col-md-12 text-center" style="display: table; margin:0 auto">
+                <table class="author-table" id="author-table">
                     <tr>
                         <td>
                             <a style="text-decoration:none" href="https://scholar.harvard.edu/dorverbin/home">
@@ -93,8 +93,11 @@
                 </table>
             </div>
         </div>
-
-
+    </div>
+    <script>
+        document.getElementById('author-row').style.maxWidth = document.getElementById("title-row").clientWidth + 'px';
+    </script>
+    <div class="container" id="main">
         <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
