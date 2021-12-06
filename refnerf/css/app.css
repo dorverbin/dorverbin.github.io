@@ -160,7 +160,7 @@ span.highlight {
 	margin-right: 0.5em;
 }
 
-.author-table, .author-th, .author-td {
+.author-table, th, td {
     table-layout: fixed;
     vertical-align: top;
     margin-left: auto;
