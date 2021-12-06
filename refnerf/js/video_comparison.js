@@ -19,7 +19,6 @@ function playVids(videoId) {
             // Normalize to [0, 1]
             bcr = videoMerge.getBoundingClientRect();
             position = ((e.pageX - bcr.x) / bcr.width);
-            console.log(position);
         }
         function trackLocationTouch(e) {
             // Normalize to [0, 1]
