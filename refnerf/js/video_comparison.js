@@ -18,12 +18,18 @@ function playVids(videoId) {
         function trackLocation(e) {
             // Normalize to [0, 1]
             bcr = videoMerge.getBoundingClientRect();
-                position = ((e.pageX - bcr.x) / bcr.width);
+            position = ((e.pageX - bcr.x) / bcr.width);
+            console.log(position);
+        }
+        function trackLocationTouch(e) {
+            // Normalize to [0, 1]
+            bcr = videoMerge.getBoundingClientRect();
+            position = ((e.touches[0].pageX - bcr.x) / bcr.width);
         }
 
         videoMerge.addEventListener("mousemove",  trackLocation, false); 
-        videoMerge.addEventListener("touchstart", trackLocation, false);
-        videoMerge.addEventListener("touchmove",  trackLocation, false);
+        videoMerge.addEventListener("touchstart", trackLocationTouch, false);
+        videoMerge.addEventListener("touchmove",  trackLocationTouch, false);
 
 
         function drawLoop() {
@@ -105,9 +111,7 @@ function resizeAndPlay(element)
   cv.width = element.videoWidth/2;
   cv.height = element.videoHeight;
   element.play();
-  element.style.height = "0px";
-  //element.hidden = true;
-  //document.getElementById(element.id + "Div").hidden = true;
+  element.style.height = "0px";  // Hide video without stopping it
     
   playVids(element.id);
 }
