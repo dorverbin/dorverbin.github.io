@@ -1,3 +1,4 @@
+// Written by Dor Verbin, October 2021
 // This is based on: http://thenewcode.com/364/Interactive-Before-and-After-Video-Comparison-in-HTML5-Canvas
 // With additional modifications based on: https://jsfiddle.net/7sk5k4gp/13/
 
