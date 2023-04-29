@@ -1,15 +1,388 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=https://scholar.harvard.edu/dorverbin">
-        <script type="text/javascript">
-            window.location.href = "https://scholar.harvard.edu/dorverbin"
-        </script>
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        If you are not redirected automatically, follow this <a href='https://scholar.harvard.edu/dorverbin'>link</a>.
-    </body>
-</html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+  <title>Dor Verbin</title>
+  
+  <meta name="author" content="Dor Verbin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Dor Verbin</name>
+              </p>
+                <p>I'm a research scientist at <a href="https://ai.google/research">Google Research</a> in <a href="https://en.wikipedia.org/wiki/One_Market_Plaza">San Francisco</a>. Before that I got my Ph.D. in computer science from the Harvard School of Engineering and Applied Sciences, where I was advised by <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>.
+              <p>
+                  Previously, I received a double B.Sc. in physics and in electrical engineering from Tel Aviv University, after which I spent a couple of years as a researcher at Camerai (<a href="https://techcrunch.com/2020/08/20/report-apple-quietly-acquired-israels-camerai-formerly-tipit-a-specialist-in-ar-and-camera-tech/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAEQ5bvbkxuCEk6x6uaeBWTaK-GmbMx7IB3uQVR8zascIy4NcT9gMavOOmWfwkqRsgP3Q8oUswEi_RaE9NPcSYPGAHn6aT9MLUQeZ3HwPYWIi9XMYQBQr1M2pwQH5f8nSthOPZ3HYGrdNEvZrJrLJRcOg8SoO1wmK5XYOLF1Lmk0Y">acquired</a> by Apple), working on real-time computer vision algorithms for mobile devices.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:dorverbin@gmail.com">Email</a> &nbsp/&nbsp
+                <!--<a href="data/CV.pdf">CV</a> &nbsp/&nbsp -->
+                <!--<a href="data/bio.txt">Bio</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=r2CioPsAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/dorverbin">Twitter</a> &nbsp/&nbsp
+                <a href="https://github.com/dorverbin/">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="img/vd.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="img/vd.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I am interested in computer vision and graphics. More specifically, I enjoy working on methods that use domain-specific knowledge (e.g. from geometry and physics) to improve the efficiency, generalizability, and interpretability of artificial vision systems.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+				
+    
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/zipnerf.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/zipnerf.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function zipnerf_start() {
+            document.getElementById('zipnerf_image').style.opacity = "1";
+          }
+
+          function zipnerf_stop() {
+            document.getElementById('zipnerf_image').style.opacity = "0";
+          }
+          zipnerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="http://jonbarron.info/zipnerf">
+          <papertitle>Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</papertitle>
+        </a>
+        <br>
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="http://jonbarron.info/zipnerf">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
+        /
+        <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
+        <p></p>
+        <p>
+        We combine mip-NeRF 360 and Instant NGP to reconstruct very large scenes.
+        </p>
+      </td>
+    </tr>
+    
+
+    <tr onmouseout="nmf_stop()" onmouseover="nmf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nmf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/nmf.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/nmf.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function nmf_start() {
+            document.getElementById('nmf_image').style.opacity = "1";
+          }
+
+          function nmf_stop() {
+            document.getElementById('nmf_image').style.opacity = "0";
+          }
+          nmf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://half-potato.gitlab.io/posts/nmf/">
+          <papertitle>Neural Microfacet Fields for Inverse Rendering</papertitle>
+        </a>
+        <br>
+        <a href="https://half-potato.gitlab.io/">Alexander Mai</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://chei.ucsd.edu/team/fkuester/">Falko Kuester</a>,
+        <a href="https://people.eecs.berkeley.edu/~sfk/">Sara Fridovich-Keil</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://half-potato.gitlab.io/posts/nmf/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=dKJIGLrOSLk">video</a>
+        /
+        <a href="https://github.com/half-potato/nmf">code</a>
+        /
+        <a href="https://arxiv.org/abs/2303.17806">arXiv</a>
+        <p></p>
+        <p>
+        We treat each point in space as an infinitesimal volumetric surface element. Using MC-based rendering to fit this representation to a collection of images yields accurate geometry, materials, and illumination.
+        </p>
+      </td>
+    </tr>
+
+        <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="img/refnerf.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='img/refnerf.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function refnerf_start() {
+                document.getElementById('refnerf_image').style.opacity = "1";
+              }
+
+              function refnerf_stop() {
+                document.getElementById('refnerf_image').style.opacity = "0";
+              }
+              refnerf_stop()
+            </script>
+          </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://dorverbin.github.io/refnerf/index.html">
+                <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <strong>Dor Verbin</strong>,
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
+              <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+              <br>
+        <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
+              <br>
+              <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
+                    /
+                    <a href="https://github.com/google-research/multinerf">code</a>
+        /
+              <a href="https://youtu.be/qrdRH9irAlk">video</a>
+              <p></p>
+              <p>We modify NeRF's representation of view-dependent appearance to improve its representation of specular appearance, and recover accurate surface normals. Our method also enables view-consistent scene editing.</p>
+            </td>
+          </tr>
+						
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/kitchenlego_square320_crf23.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/kitchenlego_square320.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mip360_start() {
+                  document.getElementById('mip360_image').style.opacity = "1";
+                }
+
+                function mip360_stop() {
+                  document.getElementById('mip360_image').style.opacity = "0";
+                }
+                mip360_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://jonbarron.info/mipnerf360">
+                <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <strong>Dor Verbin</strong>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://phogzone.com/">Peter Hedman</a>
+              <br>
+							<em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="http://jonbarron.info/mipnerf360">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
+              /
+                <a href="https://github.com/google-research/multinerf">code</a>
+                /
+              <a href="https://youtu.be/zBSH-k9GbV4">video</a>
+              <p></p>
+              <p>We extend mip-NeRF to produce realistic results on unbounded scenes.</p>
+            </td>
+          </tr>
+		
+        
+            
+            				
+          <tr onmouseout="foj_stop()" onmouseover="foj_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='foj_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/foj.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/foj.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function foj_start() {
+                  document.getElementById('foj_image').style.opacity = "1";
+                }
+
+                function foj_stop() {
+                  document.getElementById('foj_image').style.opacity = "0";
+                }
+                foj_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://vision.seas.harvard.edu/foj/">
+                <papertitle>Field of Junctions: Extracting Boundary Structure at Low SNR</papertitle>
+              </a>
+              <br>
+              <strong>Dor Verbin</strong>,
+              <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
+              <br>
+							<em>ICCV</em>, 2021
+              <br>
+              <a href="http://vision.seas.harvard.edu/foj/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2011.13866">arXiv</a>
+              /
+                <a href="https://github.com/dorverbin/fieldofjunctions">code</a>
+              /
+              <a href="https://www.youtube.com/watch?v=M0VwBw_aVQA">video</a>
+              <p></p>
+              <p>By modeling each patch in an image as a generalized junction, our model uses concurrencies between different boundary elements such as junctions, corners, and edges, and manages to extract boundary structure from extremely noisy images where previous methods fail.</p>
+            </td>
+          </tr>            
+
+            
+            
+						
+          <tr onmouseout="uniqueness_stop()" onmouseover="uniqueness_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='uniqueness_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/uniqueness.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/uniqueness.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function uniqueness_start() {
+                  document.getElementById('uniqueness_image').style.opacity = "1";
+                }
+
+                function uniqueness_stop() {
+                  document.getElementById('uniqueness_image').style.opacity = "0";
+                }
+                uniqueness_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2003.08885">
+                <papertitle>Unique Geometry and Texture from Corresponding Image Patches</papertitle>
+              </a>
+              <br>
+              <strong>Dor Verbin</strong>,
+              <a href="http://www.eecs.harvard.edu/~sjg/">Steven J. Gortler</a>,
+              <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
+              <br>
+							<em>TPAMI</em>, 2021
+              <br>
+              <a href="https://arxiv.org/abs/2003.08885">arXiv</a>
+              /
+              <a href="https://ieeexplore.ieee.org/document/9435133">paper</a>
+              /
+              <a href="https://www.youtube.com/watch?v=sHNtMOE7q-I">video (combined with SfT)</a>                
+              <p></p>
+              <p>We present a simple condition for the uniqueness of a solution to the shape from texture problem. We show that in the general case four views of a cyclostationary texture satisfy this condition and are therefore sufficient to uniquely determine shape.</p>
+            </td>
+          </tr>            
+            
+            
+						
+          <tr onmouseout="sft_stop()" onmouseover="sft_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sft_image'>
+                <img src='img/sft_normals.jpg' width="160">
+                </div>
+                <img src='img/sft.jpg' width="160">
+                </div>
+              <script type="text/javascript">
+                function sft_start() {
+                  document.getElementById('sft_image').style.opacity = "1";
+                }
+
+                function sft_stop() {
+                  document.getElementById('sft_image').style.opacity = "0";
+                }
+                sft_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://vision.seas.harvard.edu/sft/">
+                <papertitle>Toward a Universal Model for Shape from Texture</papertitle>
+              </a>
+              <br>
+              <strong>Dor Verbin</strong>,
+              <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
+              <br>
+							<em>CVPR</em>, 2020
+              <br>
+              <a href="http://vision.seas.harvard.edu/sft/">project page</a>
+              /
+              <a href="http://vision.seas.harvard.edu/sft/SFT_CVPR2020.pdf">paper</a>
+              /
+              <a href="http://vision.seas.harvard.edu/sft/SFT_CVPR2020_supp.pdf">supplement</a>
+                /
+                <a href="https://github.com/dorverbin/shapefromtexture">code and data</a>
+              /
+              <a href="https://www.youtube.com/watch?v=SAcOQc8tGqk">video</a>
+              <p></p>
+              <p>We formulate the shape from texture problem as a 3-player game. This game simultaneously estimates the underlying flat texture and object shape, and it succeeds for a large variety of texture types.</p>
+            </td>
+          </tr>            
+            
+					
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                I'm also using <a href="http://jonbarron.info" style="text-align:right;font-size:small;">Jon's</a> website template.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
