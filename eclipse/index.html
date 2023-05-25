@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Eclipse</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="https://dorverbin.github.io/refnerf/img/eclipse_titlecard.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dorverbin.github.io/eclipse">
+    <meta property="og:title" content="Eclipse: Disambiguating Illumination and Materials using Unintended Shadows">
+    <meta property="og:description" content="Decomposing an object's appearance into representations of its materials and the surrounding illumination is difficult, even when the object's 3D shape is known beforehand. This problem is ill-conditioned because diffuse materials severely blur incoming light, and is ill-posed because diffuse materials under high-frequency lighting can be indistinguishable from shiny materials under low-frequency lighting. We show that it is possible to recover precise materials and illumination---even from diffuse objects---by exploiting unintended shadows, like the ones cast onto an object by the photographer who moves around it. These shadows are a nuisance in most previous inverse rendering pipelines, but here we exploit them as signals that improve conditioning and help resolve material-lighting ambiguities. We present a method based on differentiable Monte Carlo ray tracing that uses images of an object to jointly recover its spatially-varying materials, the surrounding illumination environment, and the shapes of the unseen light occluders who inadvertently cast shadows upon it.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eclipse: Disambiguating Illumination and Materials using Unintended Shadows">
+    <meta name="twitter:description" content="Decomposing an object's appearance into representations of its materials and the surrounding illumination is difficult, even when the object's 3D shape is known beforehand. This problem is ill-conditioned because diffuse materials severely blur incoming light, and is ill-posed because diffuse materials under high-frequency lighting can be indistinguishable from shiny materials under low-frequency lighting. We show that it is possible to recover precise materials and illumination---even from diffuse objects---by exploiting unintended shadows, like the ones cast onto an object by the photographer who moves around it. These shadows are a nuisance in most previous inverse rendering pipelines, but here we exploit them as signals that improve conditioning and help resolve material-lighting ambiguities. We present a method based on differentiable Monte Carlo ray tracing that uses images of an object to jointly recover its spatially-varying materials, the surrounding illumination environment, and the shapes of the unseen light occluders who inadvertently cast shadows upon it.">
+    <meta name="twitter:image" content="https://dorverbin.github.io/refnerf/img/eclipse_titlecard.jpg">
+
+
+    <!-- mirror: F0%9F%AA%9E&lt -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌚</text></svg>">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/codemirror.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/video_comparison.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="header" style="text-align: center; margin: auto;">
+        <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
+            <h2 class="col-md-12 text-center" id="title">
+                <b>Eclipse</b>: Disambiguating Illumination and Materials <br> using Unintended Shadows<br>
+                <small>
+                    arXiv 2023
+                </small>
+            </h2>
+        </div>
+        <div class="row" id="author-row" style="margin:0 auto;">
+            <div class="col-md-12 text-center" style="display: table; margin:0 auto">
+                <table class="author-table" id="author-table">
+                    <tr>
+                        <td>
+                            <a style="text-decoration:none" href="https://dorverbin.github.io/">
+                              Dor Verbin
+                            </a>
+                            <br>Google Research
+                        </td>
+                        <td>
+                            <a style="text-decoration:none" href="http://bmild.github.io/">
+                             Ben Mildenhall
+                            </a>
+                            <br>Google Research
+                        </td>
+                        <td>
+                            <a style="text-decoration:none" href="https://phogzone.com/">
+                              Peter Hedman
+                            </a>
+                            <br>Google Research
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a style="text-decoration:none" href="https://jonbarron.info/">
+                              Jonathan T. Barron
+                            </a>
+                            <br>Google Research
+                        </td>
+                        <td>
+                            <a style="text-decoration:none" href="http://www.eecs.harvard.edu/~zickler/Main/HomePage">
+                                Todd Zickler
+                            </a>
+                            <br>Harvard University
+                        </td>
+                        <td>
+                            <a style="text-decoration:none" href="https://pratulsrinivasan.github.io/">
+                              Pratul P. Srinivasan
+                            </a>
+                            <br>Google Research
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('author-row').style.maxWidth = document.getElementById("title-row").clientWidth + 'px';
+    </script>
+    <div class="container" id="main">
+        <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="">
+                            <img src="./img/paper_image.jpg" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=amQLGyza3EU">
+                            <img src="./img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code [coming soon]</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="video-compare-container" id="materialsDiv">
+                    <video class="video" id="materials" loop playsinline autoPlay muted src="video/potatoes_mask_comparison.mp4" onplay="resizeAndPlay(this)"></video>
+                    <canvas height=0 class="videoMerge" id="materialsMerge"></canvas>
+                </div>
+			</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+Decomposing an object's appearance into representations of its materials and the surrounding illumination is difficult, even when the object's 3D shape is known beforehand. This problem is ill-conditioned because diffuse materials severely blur incoming light, and is ill-posed because diffuse materials under high-frequency lighting can be indistinguishable from shiny materials under low-frequency lighting. We show that it is possible to recover precise materials and illumination—even from diffuse objects—by exploiting unintended shadows, like the ones cast onto an object by the photographer who moves around it. These shadows are a nuisance in most previous inverse rendering pipelines, but here we exploit them as signals that improve conditioning and help resolve material-lighting ambiguities. We present a method based on differentiable Monte Carlo ray tracing that uses images of an object to jointly recover its spatially-varying materials, the surrounding illumination environment, and the shapes of the unseen light occluders who inadvertently cast shadows upon it.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://youtube.com/embed/amQLGyza3EU" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Model
+                </h3>
+            
+            <div class="text-justify">
+                We use the shadows cast by a camera operator when capturing a scene to disambiguate between the objects' materials and the lights illuminating them, and to enable recovering high-frequency illumination content which is usually impossible to recover from diffuse objects. We model the illumination as an environment map masked by a temporally-varying occluder, and we recover the spatially-varying parameters of the BRDF on the surface, the illumination, and the occluder shape corresponding to every image.
+
+                <br><br>
+                <div class="text-center">
+                    <img src="./img/potato_teaser.png" width="100%">
+                </div>
+			</div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+            
+            <div class="text-justify">
+                We show that the occlusion cue is sufficient for recovering accurate illumination, materials, and occluder shapes, and that our method works on a variety of shapes with different textures, even when the objects are highly diffuse.
+
+                <br><br>
+                <div class="text-center">
+                    <img src="./img/potato_results.png" width="100%">
+                </div>
+			</div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{verbin2023eclipse,
+    title={Eclipse: Disambiguating Illumination and Materials using Unintended Shadows},
+    author={Dor Verbin and Ben Mildenhall and Peter Hedman and 
+            Jonathan T. Barron and Todd Zickler and Pratul P. Srinivasan},
+    journal={arXiv},
+    year={2023}
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                    <br>
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and <a href="http://dorverbin.github.io/refnerf">Ref-NeRF</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
