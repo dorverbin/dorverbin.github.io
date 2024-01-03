@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Dor Verbin</name>
               </p>
-                <p>I'm a research scientist at <a href="https://ai.google/research">Google Research</a> in <a href="https://en.wikipedia.org/wiki/One_Market_Plaza">San Francisco</a>. Before that I got my Ph.D. in computer science from the Harvard School of Engineering and Applied Sciences, where I was advised by <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>.
+                <p>I'm a research scientist at <a href="https://ai.google/research">Google Research</a> in <a href="https://en.wikipedia.org/wiki/One_Market_Plaza">San Francisco</a>. Before that I got my Ph.D. in computer science from the Harvard School of Engineering and Applied Sciences, where I was advised by <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>.
               <p>
                   Previously, I received a double B.Sc. in physics and in electrical engineering from Tel Aviv University, after which I spent a couple of years as a researcher at Camerai (<a href="https://techcrunch.com/2020/08/20/report-apple-quietly-acquired-israels-camerai-formerly-tipit-a-specialist-in-ar-and-camera-tech/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAEQ5bvbkxuCEk6x6uaeBWTaK-GmbMx7IB3uQVR8zascIy4NcT9gMavOOmWfwkqRsgP3Q8oUswEi_RaE9NPcSYPGAHn6aT9MLUQeZ3HwPYWIi9XMYQBQr1M2pwQH5f8nSthOPZ3HYGrdNEvZrJrLJRcOg8SoO1wmK5XYOLF1Lmk0Y">acquired</a> by Apple), working on real-time computer vision algorithms for mobile devices.
               </p>
@@ -43,14 +43,60 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I am interested in computer vision and graphics. More specifically, I enjoy working on methods that use domain-specific knowledge (e.g. from geometry and physics) to improve the efficiency, generalizability, and interpretability of artificial vision systems.
+                I am interested in computer vision and graphics. More specifically, I enjoy working on methods that use domain-specific knowledge of geometry, graphics, and physics, to improve computer vision systems.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	
+    <tr onmouseout="boundatt_stop()" onmouseover="boundatt_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='boundatt_image'><video  width=100% muted autoplay loop>
+          <source src="img/boundatt.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/boundatt.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function boundatt_start() {
+            document.getElementById('boundatt_image').style.opacity = "1";
+          }
 
+          function boundatt_stop() {
+            document.getElementById('boundatt_image').style.opacity = "0";
+          }
+          boundatt_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://boundaryattention.github.io/">
+          <papertitle>Boundary Attention: Learning to Find Faint Boundaries at Any Resolution
+</papertitle>
+        </a>
+        <br>
+        <a href="">Mia G. Polansky</a>,
+        <a href="">Charles Herrmann</a>,
+        <a href="https://hurjunhwa.github.io/">Junhwa Hur</a>,
+        <a href="https://deqings.github.io/">Deqing Sun</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://www.eecs.harvard.edu/~zickler/">Todd Zickler</a>,
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://boundaryattention.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2401.00935">arXiv</a>
+        <p></p>
+        <p>
+        We design a new boundary-aware attention mechanism to quickly find boundaries at images with low SNRs. The output is similar to the <a href="#foj">field of junctions</a>, but this works ~100x faster!
+        </p>
+      </td>
+    </tr>
+
+            
+            
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -78,7 +124,7 @@
         <br>
         <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
         <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <strong>Dor Verbin</strong>,
         <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
         <a href="https://bmild.github.io/">Ben Mildenhall</a>
         <br>
@@ -226,7 +272,7 @@
         <a href="https://bmild.github.io/">Ben Mildenhall</a>,
         <a href="https://phogzone.com/">Peter Hedman</a>,
         <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <a href="Todd Zickler">Todd Zickler</a>,
+        <a href="https://www.eecs.harvard.edu/~zickler/">Todd Zickler</a>,
         <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
         <br>
         <em>arXiv</em>, 2023
@@ -466,7 +512,7 @@
               <strong>Dor Verbin</strong>,
               <a href="https://phogzone.com/">Peter Hedman</a>,
               <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-              <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>,
+              <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>,
               <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
               <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
               <br>
@@ -534,7 +580,7 @@
             				
           <tr onmouseout="foj_stop()" onmouseover="foj_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
+              <div class="one" id="foj">
                 <div class="two" id='foj_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="img/foj.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -558,7 +604,7 @@
               </a>
               <br>
               <strong>Dor Verbin</strong>,
-              <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
+              <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
               <br>
 							<em>ICCV</em>, 2021
               <br>
@@ -603,8 +649,8 @@
               </a>
               <br>
               <strong>Dor Verbin</strong>,
-              <a href="http://www.eecs.harvard.edu/~sjg/">Steven J. Gortler</a>,
-              <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
+              <a href="https://www.eecs.harvard.edu/~sjg/">Steven J. Gortler</a>,
+              <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
               <br>
 							<em>TPAMI</em>, 2021
               <br>
@@ -645,7 +691,7 @@
               </a>
               <br>
               <strong>Dor Verbin</strong>,
-              <a href="http://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
+              <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>
               <br>
 							<em>CVPR</em>, 2020
               <br>
