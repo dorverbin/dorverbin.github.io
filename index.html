@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Dor Verbin</name>
               </p>
-                <p>I'm a research scientist at <a href="https://ai.google/research">Google Research</a> in <a href="https://en.wikipedia.org/wiki/One_Market_Plaza">San Francisco</a>. Before that I got my Ph.D. in computer science from the Harvard School of Engineering and Applied Sciences, where I was advised by <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>.
+                <p>I'm a research scientist at <a href="https://ai.google/research">Google Research</a> in San Francisco. Before that I got my Ph.D. in computer science from the Harvard School of Engineering and Applied Sciences, where I was advised by <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>.
               <p>
                   Previously, I received a double B.Sc. in physics and in electrical engineering from Tel Aviv University, after which I spent a couple of years as a researcher at Camerai (<a href="https://techcrunch.com/2020/08/20/report-apple-quietly-acquired-israels-camerai-formerly-tipit-a-specialist-in-ar-and-camera-tech/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAEQ5bvbkxuCEk6x6uaeBWTaK-GmbMx7IB3uQVR8zascIy4NcT9gMavOOmWfwkqRsgP3Q8oUswEi_RaE9NPcSYPGAHn6aT9MLUQeZ3HwPYWIi9XMYQBQr1M2pwQH5f8nSthOPZ3HYGrdNEvZrJrLJRcOg8SoO1wmK5XYOLF1Lmk0Y">acquired</a> by Apple), working on real-time computer vision algorithms for mobile devices.
               </p>
@@ -49,7 +49,153 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	
+
+            
+    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/eclipse_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/eclipse_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function eclipse_start() {
+            document.getElementById('eclipse_image').style.opacity = "1";
+          }
+
+          function eclipse_stop() {
+            document.getElementById('eclipse_image').style.opacity = "0";
+          }
+          eclipse_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dorverbin.github.io/eclipse">
+          <papertitle>Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</papertitle>
+        </a>
+        <br>
+        <strong>Dor Verbin</strong>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://www.eecs.harvard.edu/~zickler/">Todd Zickler</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="https://dorverbin.github.io/eclipse">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
+        /
+        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
+        <p></p>
+        <p>
+        Shadows cast by unobserved occluders provide a cue for recovering materials and high-frequency illumination from images of diffuse objects.
+        </p>
+      </td>
+    </tr>
+
+            
+    <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/recon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/recon.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function recon_start() {
+            document.getElementById('recon_image').style.opacity = "1";
+          }
+
+          function recon_stop() {
+            document.getElementById('recon_image').style.opacity = "0";
+          }
+          recon_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://reconfusion.github.io/">
+          <papertitle>ReconFusion: 3D Reconstruction with Diffusion Priors</papertitle>
+        </a>
+        <br>
+        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://poolio.github.io/">Ben Poole</a>,
+        <a href="https://holynski.org/">Aleksander Holynski*</a>
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="https://reconfusion.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2312.02981">arXiv</a>
+        <p></p>
+        <p>
+        We finetune an image diffusion model to accept multiview inputs, then use it to regularize radiance field reconstruction.
+        </p>
+      </td>
+    </tr>
+
+            
+    <tr onmouseout="genten_stop()" onmouseover="genten_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='genten_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/genten.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/genten.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function genten_start() {
+            document.getElementById('genten_image').style.opacity = "1";
+          }
+
+          function genten_stop() {
+            document.getElementById('genten_image').style.opacity = "0";
+          }
+          genten_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://powers-of-10.github.io/">
+          <papertitle>Generative Powers of Ten</papertitle>
+        </a>
+        <br>
+        <a href="https://scholar.google.ch/citations?user=v3NXpJAAAAAJ&hl=en">Xiaojuan Wang</a>,
+        <a href="https://www.linkedin.com/in/jannekontkanen/">Janne Kontkanen</a>,
+        <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
+        <a href="https://www.smseitz.com/">Steve Seitz</a>,
+        <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://holynski.org/">Aleksander Holynski</a>
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="https://powers-of-10.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2312.02149">arXiv</a>
+        <p></p>
+        <p>
+        We use a generative text-to-image model for creating videos with extreme zoom ins.
+        </p>
+      </td>
+    </tr>
+            
+            
     <tr onmouseout="boundatt_stop()" onmouseover="boundatt_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -144,150 +290,11 @@
 
             
             
-    <tr onmouseout="recon_stop()" onmouseover="recon_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/recon.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/recon.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function recon_start() {
-            document.getElementById('recon_image').style.opacity = "1";
-          }
-
-          function recon_stop() {
-            document.getElementById('recon_image').style.opacity = "0";
-          }
-          recon_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://reconfusion.github.io/">
-          <papertitle>ReconFusion: 3D Reconstruction with Diffusion Priors</papertitle>
-        </a>
-        <br>
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
-        <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://keunhong.com/">Keunhong Park</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-        <strong>Dor Verbin</strong>,
-        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <a href="https://poolio.github.io/">Ben Poole</a>,
-        <a href="https://holynski.org/">Aleksander Holynski*</a>
-        <br>
-        <em>arXiv</em>, 2023
-        <br>
-        <a href="https://reconfusion.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2312.02981">arXiv</a>
-        <p></p>
-        <p>
-        We finetune an image diffusion model to accept multiview inputs, then use it to regularize radiance field reconstruction.
-        </p>
-      </td>
-    </tr>
             
             
-    <tr onmouseout="genten_stop()" onmouseover="genten_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='genten_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/genten.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/genten.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function genten_start() {
-            document.getElementById('genten_image').style.opacity = "1";
-          }
-
-          function genten_stop() {
-            document.getElementById('genten_image').style.opacity = "0";
-          }
-          genten_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://powers-of-10.github.io/">
-          <papertitle>Generative Powers of Ten</papertitle>
-        </a>
-        <br>
-        <a href="https://scholar.google.ch/citations?user=v3NXpJAAAAAJ&hl=en">Xiaojuan Wang</a>,
-        <a href="https://www.linkedin.com/in/jannekontkanen/">Janne Kontkanen</a>,
-        <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
-        <a href="https://www.smseitz.com/">Steve Seitz</a>,
-        <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-        <strong>Dor Verbin</strong>,
-        <a href="https://holynski.org/">Aleksander Holynski</a>
-        <br>
-        <em>arXiv</em>, 2023
-        <br>
-        <a href="https://powers-of-10.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2312.02149">arXiv</a>
-        <p></p>
-        <p>
-        We use a generative text-to-image model for creating videos with extreme zoom ins.
-        </p>
-      </td>
-    </tr>
             
             
 
-    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/eclipse_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/eclipse_before.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function eclipse_start() {
-            document.getElementById('eclipse_image').style.opacity = "1";
-          }
-
-          function eclipse_stop() {
-            document.getElementById('eclipse_image').style.opacity = "0";
-          }
-          eclipse_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://dorverbin.github.io/eclipse">
-          <papertitle>Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</papertitle>
-        </a>
-        <br>
-        <strong>Dor Verbin</strong>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <a href="https://phogzone.com/">Peter Hedman</a>,
-        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <a href="https://www.eecs.harvard.edu/~zickler/">Todd Zickler</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-        <br>
-        <em>arXiv</em>, 2023
-        <br>
-        <a href="https://dorverbin.github.io/eclipse">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
-        /
-        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
-        <p></p>
-        <p>
-        Shadows cast by unobserved occluders provide a cue for recovering materials and high-frequency illumination from images of diffuse objects.
-        </p>
-      </td>
-    </tr>
                         
             
             
@@ -323,7 +330,7 @@
         <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
         <a href="https://phogzone.com/">Peter Hedman</a>
         <br>
-        <em>ICCV</em>, 2023
+        <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Finalist)</strong></font>
         <br>
         <a href="http://jonbarron.info/zipnerf">project page</a>
         /
