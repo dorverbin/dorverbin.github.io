@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Dor Verbin</name>
               </p>
-                <p>I'm a research scientist at <a href="https://ai.google/research">Google Research</a> in San Francisco. Before that I got my Ph.D. in computer science from the Harvard School of Engineering and Applied Sciences, where I was advised by <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>.
+                <p>I'm a research scientist at <a href="https://deepmind.google/">Google DeepMind</a> in San Francisco. Before that I got my Ph.D. in computer science from the Harvard School of Engineering and Applied Sciences, where I was advised by <a href="https://www.eecs.harvard.edu/~zickler">Todd Zickler</a>.
               <p>
                   Previously, I received a double B.Sc. in physics and in electrical engineering from Tel Aviv University, after which I spent a couple of years as a researcher at Camerai (<a href="https://techcrunch.com/2020/08/20/report-apple-quietly-acquired-israels-camerai-formerly-tipit-a-specialist-in-ar-and-camera-tech/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAEQ5bvbkxuCEk6x6uaeBWTaK-GmbMx7IB3uQVR8zascIy4NcT9gMavOOmWfwkqRsgP3Q8oUswEi_RaE9NPcSYPGAHn6aT9MLUQeZ3HwPYWIi9XMYQBQr1M2pwQH5f8nSthOPZ3HYGrdNEvZrJrLJRcOg8SoO1wmK5XYOLF1Lmk0Y">acquired</a> by Apple), working on real-time computer vision algorithms for mobile devices.
               </p>
@@ -50,6 +50,51 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            
+    <tr onmouseout="illum_stop()" onmouseover="illum_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='illum_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/illum.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/illum.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function illum_start() {
+            document.getElementById('illum_image').style.opacity = "1";
+          }
+
+          function illum_stop() {
+            document.getElementById('illum_image').style.opacity = "0";
+          }
+          illum_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://illuminerf.github.io/">
+			<papertitle>IllumiNeRF: 3D Relighting without Inverse Rendering</papertitle>
+        </a>
+        <br>
+        <a href="https://xiaoming-zhao.com/">Xiaoming Zhao</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+        <a href="https://henzler.github.io/">Philipp Henzler</a>
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://illuminerf.github.io">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2406.06527">arXiv</a>
+        <p></p>
+        <p>
+				We do 3D relighting by sampling from a single-image relighting diffusion model, and distilling it into a latent-variable NeRF.
+        </p>
+      </td>
+    </tr>
+            
             
     <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -96,6 +141,8 @@
         </p>
       </td>
     </tr>
+
+            
 
             
     <tr onmouseout="recon_stop()" onmouseover="recon_start()">
@@ -191,6 +238,55 @@
         <p></p>
         <p>
         We use a generative text-to-image model for creating videos with extreme zoom ins.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bog_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/bog.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/bog.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('bog_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('bog_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://creiser.github.io/binary_opacity_grid/">
+          <papertitle>Binary Opacity Grids: Capturing Fine Geometric Detail for Mesh-Based View Synthesis</papertitle>
+        </a>
+        <br>
+				<a href="https://creiser.github.io/">Christian Reiser</a>,
+				<a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
+				<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+				<strong>Dor Verbin</strong>,
+				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+				<a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+				<a href="https://phogzone.com/">Peter Hedman</a>*,
+				<a href="https://www.cvlibs.net/">Andreas Geiger</a>*		
+        <br>
+        <em>SIGGRAPH</em>, 2024
+        <br>
+        <a href="https://creiser.github.io/binary_opacity_grid/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=2TPUmGRg8bM">video</a>
+        /
+        <a href="https://arxiv.org/abs/2402.12377">arXiv</a>
+        <p></p>
+        <p>
+        Applying anti-aliasing to a discrete opacity grid lets you render a hard representation into a soft image, and this enables highly-detailed mesh recovery.
         </p>
       </td>
     </tr>
