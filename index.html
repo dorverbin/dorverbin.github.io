@@ -51,6 +51,153 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             
+
+            
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+          <source src="img/r2r.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/r2r.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function r2r_start() {
+            document.getElementById('r2r_image').style.opacity = "1";
+          }
+
+          function r2r_stop() {
+            document.getElementById('r2r_image').style.opacity = "0";
+          }
+          r2r_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://relight-to-reconstruct.github.io/">
+          <papertitle>Generative Multiview Relighting for
+              3D Reconstruction under Extreme Illumination Variation</papertitle>
+        </a>
+        <br>
+        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>, 
+        <strong>Dor Verbin</strong>
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://relight-to-reconstruct.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2412.15211">arXiv</a>
+        <p></p>
+        <p>
+				We train a generative model to turn images taken under extremey different illumination into a consistently-lit set of images, which can then be 3D reconstructed.
+        </p>
+      </td>
+    </tr>
+            
+            
+            
+    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='simvs_image'><video  width=100% muted autoplay loop>
+          <source src="img/simvs.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/simvs.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function simvs_start() {
+            document.getElementById('simvs_image').style.opacity = "1";
+          }
+
+          function simvs_stop() {
+            document.getElementById('simvs_image').style.opacity = "0";
+          }
+          simvs_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://alextrevithick.github.io/simvs">
+          <papertitle>SimVS: Simulating World Inconsistencies for Robust View Synthesis</papertitle>
+        </a>
+        <br>
+        <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
+        <a href="https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en">Roni Paiss</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
+        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
+        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+        <a  href="https://poolio.github.io/">Ben Poole</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://holynski.org/">Aleksander Holynski</a>,
+        <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://alextrevithick.github.io/simvs/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2412.07696">arXiv</a>
+        <p></p>
+        <p>
+        We use a video model to simulate inconsistencies during capture in order to learn how to get consistent 3D reconstructions from inconsistent captures.
+        </p>
+      </td>
+    </tr>
+            
+            
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ever_image'>
+					  <img src='img/ever_after.png' width=100%>
+					</div>
+          <img src='img/ever_before.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
+
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
+          }
+          ever_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://half-potato.gitlab.io/posts/ever/">
+            <papertitle>EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis</papertitle>
+        </a>
+        <br>
+        <a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://grgkopanas.github.io/">George Kopanas</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
+        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
+        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				<br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
+        <p></p>
+        <p>
+				We raytrace constant-density ellipsoids, which results in a more accurate and flexible model compared with Gaussian splatting, while still running in real-time.
+        </p>
+      </td>
+    </tr>
+            
+            
     <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -97,7 +244,50 @@
       </td>
     </tr>
             
-            
+    <tr onmouseout="illum_stop()" onmouseover="illum_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='illum_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/illum.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/illum.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function illum_start() {
+            document.getElementById('illum_image').style.opacity = "1";
+          }
+
+          function illum_stop() {
+            document.getElementById('illum_image').style.opacity = "0";
+          }
+          illum_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://illuminerf.github.io/">
+			<papertitle>IllumiNeRF: 3D Relighting without Inverse Rendering</papertitle>
+        </a>
+        <br>
+        <a href="https://xiaoming-zhao.com/">Xiaoming Zhao</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <strong>Dor Verbin</strong>,
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+        <a href="https://henzler.github.io/">Philipp Henzler</a>
+        <br>
+        <em>NeurIPS</em>, 2024
+        <br>
+        <a href="https://illuminerf.github.io">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2406.06527">arXiv</a>
+        <p></p>
+        <p>
+				We do 3D relighting by sampling from a single-image relighting diffusion model, and distilling it into a latent-variable NeRF.
+        </p>
+      </td>
+    </tr>
+
             
     <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -144,52 +334,7 @@
       </td>
     </tr>
 
-            
-            
-    <tr onmouseout="illum_stop()" onmouseover="illum_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='illum_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/illum.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/illum.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function illum_start() {
-            document.getElementById('illum_image').style.opacity = "1";
-          }
-
-          function illum_stop() {
-            document.getElementById('illum_image').style.opacity = "0";
-          }
-          illum_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://illuminerf.github.io/">
-			<papertitle>IllumiNeRF: 3D Relighting without Inverse Rendering</papertitle>
-        </a>
-        <br>
-        <a href="https://xiaoming-zhao.com/">Xiaoming Zhao</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-        <strong>Dor Verbin</strong>,
-        <a href="https://keunhong.com/">Keunhong Park</a>,
-        <a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-        <a href="https://henzler.github.io/">Philipp Henzler</a>
-        <br>
-        <em>arXiv</em>, 2024
-        <br>
-        <a href="https://illuminerf.github.io">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2406.06527">arXiv</a>
-        <p></p>
-        <p>
-				We do 3D relighting by sampling from a single-image relighting diffusion model, and distilling it into a latent-variable NeRF.
-        </p>
-      </td>
-    </tr>
-            
+                        
             
     <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -420,7 +565,7 @@
         <strong>Dor Verbin</strong>,
         <a href="https://www.eecs.harvard.edu/~zickler/">Todd Zickler</a>,
         <br>
-        <em>arXiv</em>, 2023
+        <em>CoRR</em>, 2024
         <br>
         <a href="https://boundaryattention.github.io/">project page</a>
         /
