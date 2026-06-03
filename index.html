@@ -52,6 +52,239 @@
 
             
             
+            
+
+    <tr onmouseout="green_stop()" onmouseover="green_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='green_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/gr3en_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/gr3en_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function green_start() {
+            document.getElementById('green_image').style.opacity = "1";
+          }
+
+          function green_stop() {
+            document.getElementById('green_image').style.opacity = "0";
+          }
+          green_stop()
+        </script>
+      </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2601.16272">
+      <papertitle>GR3EN: Generative Relighting for 3D Environments</papertitle>
+    </a>
+    <br>
+    <a href="https://xyxingx.github.io/">Xiaoyan Xing</a>, 
+    <a href="https://henzler.github.io/">Philipp Henzler</a>, 
+    <a href="https://hurjunhwa.github.io/">Junhwa Hur</a>,
+    <a href="">Runze Li</a>, 
+    <a href="https://jonbarron.info/">Jonathan T. Barron</a>, 
+    <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>, 
+    <strong>Dor Verbin</strong>
+    <br>
+    <em>SIGGRAPH</em>, 2026
+    <br>
+    <a href="https://gr3en-relight.github.io/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2601.16272">arXiv</a>
+    <p></p>
+    <p>
+      We fine-tune a generative model to relight a video given fine-grained control over the light source intensities. When applied to videos generated from a 3D reconstruction, we can then update the 3D reconstruction using the relit video, and get a relit 3D environment.
+    </p>
+  </td>
+</tr>
+     
+
+    <tr onmouseout="egs_stop()" onmouseover="egs_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='egs_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/egs_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/egs_before.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function egs_start() {
+            document.getElementById('egs_image').style.opacity = "1";
+          }
+
+          function egs_stop() {
+            document.getElementById('egs_image').style.opacity = "0";
+          }
+          egs_stop()
+        </script>
+      </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2605.29136">
+      <papertitle>Eulerian Gaussian Splatting using Hashed Probability Pyramids</papertitle>
+    </a>
+    <br>
+    <a href="">Mia G. Polansky</a>,
+    <a href="https://grgkopanas.github.io/">George Kopanas</a>, 
+    <a href="http://stephangarbin.com/">Stephan J. Garbin</a>, 
+    <a href="https://zickler.seas.harvard.edu/">Todd Zickler</a>, 
+    <strong>Dor Verbin</strong>
+    <br>
+    <em>CVPR</em>, 2026
+    <br>
+    <a href="https://euleriansplatting.github.io/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2605.29136">arXiv</a>
+    /
+    <a href="https://github.com/euleriansplatting/eulerian-splatting">code</a>
+    <p></p>
+    <p>
+      We reformulate 3D Gaussian Splatting using a probabilistic framework that combines the optimization dynamics of radiance fields with the fast rendering of 3DGS. The probabilistic approach enables optimization of 3D Gaussians without relying on heuristics like densification or pruning.
+    </p>
+  </td>
+</tr>            
+
+
+
+
+
+    <tr onmouseout="voronoi_stop()" onmouseover="voronoi_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='voronoi_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/voronoi_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/voronoi_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function voronoi_start() {
+            document.getElementById('voronoi_image').style.opacity = "1";
+          }
+
+          function voronoi_stop() {
+            document.getElementById('voronoi_image').style.opacity = "0";
+          }
+          voronoi_stop()
+        </script>
+      </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2512.14180">
+      <papertitle>Spherical Voronoi: Directional Appearance as a Differentiable Partition of the Sphere</papertitle>
+    </a>
+    <br>
+    <a href="https://eidos.di.unito.it/author/francesco-di-sario/">Francesco Di Sario</a>, 
+    <a href="http://drebain.com/">Daniel Rebain</a>, 
+    <strong>Dor Verbin</strong>, 
+    <a href="https://eidos.di.unito.it/author/marco-grangetto/">Marco Grangetto</a>, 
+    <a href="https://theialab.ca/">Andrea Tagliasacchi</a>
+    <br>
+    <em>CVPR</em>, 2026
+    <br>
+    <a href="https://sphericalvoronoi.github.io/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2512.14180">arXiv</a>
+    /
+    <a href="https://github.com/sphericalvoronoi/sphericalvoronoi">code</a>
+    <p></p>
+    <p>
+      We introduce a Voronoi tesselation of the sphere and use it to model view-dependent appearance. We show that this representation outperforms existing representations like spherical Gaussians and spherical harmonics both in the standard radiance field setting, and when used to model spatially-varying light probes for scenes with complicated view-dependent appearance.
+    </p>
+  </td>
+</tr>            
+       
+            
+       
+            
+<tr onmouseout="fourier_stop()" onmouseover="fourier_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='fourier_image'>
+        <img src='img/fourier_after.jpg' width=100%>
+      </div>
+      <img src='img/fourier_before.jpg' width=100%>
+    </div>
+    <script type="text/javascript">
+      function fourier_start() {
+        document.getElementById('fourier_image').style.opacity = "1";
+      }
+      function fourier_stop() {
+        document.getElementById('fourier_image').style.opacity = "0";
+      }
+      fourier_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2605.24278">
+      <papertitle>Fourier Feature Pyramids for Physics-Informed Neural Networks</papertitle>
+    </a>
+    <br>
+    <a href="https://brandonyzhao.github.io/">Brandon Zhao</a>, 
+    <a href="https://roywangyx.github.io/">Yixuan Wang</a>, 
+    <a href="https://jonbarron.info/">Jonathan T. Barron</a>, 
+    <a href="https://users.cms.caltech.edu/~klbouman/">Katherine L. Bouman</a>, 
+    <strong>Dor Verbin</strong>, 
+    <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+    <br>
+    <em>arXiv</em>, 2026
+    <br>
+    <a href="">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2605.24278">arXiv</a>
+    <p></p>
+    <p>
+      We use a multiscale representation for numerically solving PDEs. We show that using a large, fixed collection of Fourier features significantly improves the solution, while still being efficient in terms of parameters and runtime.
+    </p>
+  </td>
+</tr>
+            
+    <tr onmouseout="foam_stop()" onmouseover="foam_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='foam_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/foam_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/foam_before.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function foam_start() {
+            document.getElementById('foam_image').style.opacity = "1";
+          }
+
+          function foam_stop() {
+            document.getElementById('foam_image').style.opacity = "0";
+          }
+          foam_stop()
+        </script>
+      </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2604.24994">
+      <papertitle>Power Foam: Unifying Real-Time Differentiable Ray Tracing and Rasterization</papertitle>
+    </a>
+    <br>
+    <a href="https://shrisudhang.github.io/">Shrisudhan Govindarajan</a>, 
+    <a href="http://drebain.com/">Daniel Rebain</a>, 
+    <strong>Dor Verbin</strong>, 
+    <a href="https://www.cs.ubc.ca/~kmyi/">Kwang Moo Yi</a>, 
+    <a href="https://scholar.google.com/citations?user=1zqcBjcAAAAJ&hl=en">Anish Prabhu</a>, 
+    <a href="https://theialab.ca/">Andrea Tagliasacchi</a>
+    <br>
+    <em>arXiv</em>, 2026
+    <br>
+    <a href="https://powerfoam.github.io/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2604.24994">arXiv</a>
+    /
+    <a href="https://github.com/theialab/powerfoam">code</a>
+    <p></p>
+    <p>
+      We introduce a polyhedral representation to 3D radiance fields that can be rendered in real time, and provides identical results whether it is ray-traced or rasterized.  
+    </p>
+  </td>
+</tr>
+            
     <tr onmouseout="rogr_stop()" onmouseover="rogr_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
